@@ -1,1 +1,2 @@
 # super-sniffle
+theme: minima
