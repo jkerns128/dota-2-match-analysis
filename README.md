@@ -1,2 +1,2 @@
-# super-sniffle
+# Introduction
 theme: minima
