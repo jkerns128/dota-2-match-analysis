@@ -1,4 +1,4 @@
-### Dota 2: What hero is the most toxic?
+# Dota 2: What hero is the most toxic?
 
 theme: minima
 # Introduction
