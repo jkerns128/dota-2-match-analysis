@@ -674,6 +674,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
+     <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"></span>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">143</span>
