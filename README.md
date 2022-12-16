@@ -2,12 +2,17 @@
 
 ## Introduction
 
-Dota 2 is a 5v5 MOBA(Multiplayer Online Battle Arena) where both teams work together to defeat the other team. Each team selects 5 heroes for their players to play, each with unique abilities and quirks. Heroes can also be augmented by leveling up and buying items. These items can have many different effects, ranging from resetting the cooldowns of all abilities to reviving your hero immediately after death. An important part of the game is being able to kill the enemy heroes, which grants gold for item purchases and experience for abiliy upgrades. 
- 
-A key part of the game features a voice chat system, where players can talk to their teammates to coordinate and cooperate. There is also a text chat system which is also used for the same goals. Some players out of frustration may use these means to insult or belittle their enemies, often players will do this to their fellow teamates. While the players who do this are known as "toxic" in their communities, it is still very common to find players behaving like this in games. Valve has implemented some systems, like behavior score, in order to seperate out these players from more friendly ones, but it does not remove these players from the game. In my analysis, I chose to look at why some players may be more toxic than other players.
+<body>
+<p>Dota 2 is a 5v5 MOBA(Multiplayer Online Battle Arena) where both teams work together to defeat the other team.  Each team selects 5 heroes for their players to play, each with unique abilities and quirks.  Heroes can also be augmented by leveling up and buying items.  These items can have many different effects, ranging from resetting the cooldowns of all abilities to reviving your hero immediately after death.  An important part of the game is being able to kill the enemy heroes, which grants gold for item purchases and experience for abiliy upgrades. </p>
+
+<p>A key part of the game features a voice chat system, where players can talk to their teammates to coordinate and cooperate.  There is also a text chat system which is also used for the same goals.  Some players out of frustration may use these means to insult or belittle their enemies, often players will do this to their fellow teamates.  While the players who do this are known as "toxic" in their communities, it is still very common to find players behaving like this in games.  Valve has implemented some systems, like behavior score, in order to seperate out these players from more friendly ones, but it does not remove these players from the game.  In my analysis, I chose to look at why some players may be more toxic than other players.<p>
+</body>
 
 ## Data Exploration
- 
+<body>
+<p>The dataset I got from kaggle has 18 .csv files with many different bits of information. For this project I picked the 5 the sheets that are useful to the analysis. </p>
+</body>
+
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -42,7 +47,14 @@ A key part of the game features a voice chat system, where players can talk to t
 </div>
 </div>
 </div>
+
 </div>
+
+
+<body>
+<p>The players dataframe has 86 columns, including amount of movement actions issued and their types, gold acquired, hero id, minions killed, damage, items, etc. but the thing we are most interested in is the player slot, hero id, KDA, and the match id.  This can be later referenced to find out how many people played a hero and how often a hero was won with. here we merge with the match data to figure out which games were wins and losses.  The database I used can be <a href="https://www.kaggle.com/datasets/devinanzelmo/dota-2-matches">found here</a>. </p>
+</body>
+
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -81,8 +93,6 @@ A key part of the game features a voice chat system, where players can talk to t
 
 <div class="jp-OutputArea-child">
 
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
@@ -321,6 +331,10 @@ A key part of the game features a voice chat system, where players can talk to t
 
 </div>
 
+<body>
+<p>I was curious what heroes had the highest influence on the outcome on the game.  In the game there is usually a "meta" where players are influenced to pick the best heroes and items at the time in order to increase their chance of winning.  Having the breakdowns of winrates among the heroes is important!  Winrate of the heroes can effect many other things in this analysis because it can become a confounding variable.  Certain heroes build certain items more often than others and can have outcomes of the game hinge on them.</p>
+</body>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -357,7 +371,6 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
@@ -485,6 +498,13 @@ A key part of the game features a voice chat system, where players can talk to t
 </div>
 
 </div>
+
+<body>
+<p>I wanted to explore which items had the highest winrate.  Item winrate is not something that people usually collect data for even though items are an important part of the game.  In matches, item choice can singlehandedly win games if <a href='https://www.youtube.com/watch?v=pSLfxEZVJVU'>done properly</a>.</p>
+
+<p>To do this, I carried across all the items that were in the inventories of winning players into new columns.  I then tallied these in order to find out their frequencies in winning games and across all the matches I won with. Among the winning items were recipies, which have no utility in the games other than building strong items.  I merged the table with the item id table, which has the recipes removed.  I choose to do an inner merge because I thought it was not valuable data to know the winrates of items that only win the game by chance.</p>
+</body>
+
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -667,6 +687,10 @@ A key part of the game features a voice chat system, where players can talk to t
 
 </div>
 
+<body>
+<p>I think theres an argument to be made that tango, a healing item that can be built at the beginning of the game, is not winning matches because it's the strongest item in the game.  I think there may be a correlation with having tango in your inventory and winning the game because of other reasons.  It may be likely that people who did not use all the tango they bought in the beginning of the game did not need it because they were winning the game already.  Similar to the item at the bottom of the list, if you have a courier in your inventory you probably lost the game.  Not because that item is bad, but because if you have it in your inventory you most likely are not winning the game.</p>
+</body>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -824,7 +848,11 @@ Notes:
 </div>
 
 </div>
+## Looking At Profanities
 
+<body>
+<p>  In order to have a list of words that I can reference from without compiling my own, I decided to download a list <a href="https://www.freewebheaders.com/full-list-of-bad-words-banned-by-google/">The list I used is here</a> (I used Google's base list of bad words, comma-seperated).  If you want to recreate my results but do not want to download from this website, you can find any comma-seperated list of profane words/phrases and input them as a text file.  I decided against the full list because it takes about 20 minutes to complete the processing on my machine with the full list, while the base list took less than 5 minutes to complete.  This made testing my code and doing processing much faster, and it made sure that I could check for problems with the set much faster.  The full list also has words that are uncommon to see, which makes them not worth checking for if I just want a general layout of who uses profanities more.</p>
+</body>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -841,6 +869,9 @@ Notes:
 </div>
 </div>
 </div>
+<body>
+<p>In my method, I use python's count() method, which naively checks if the word is in the string, ignoring if it is in the context of a larger word, like "fate", which caused problems with Google's full list, which contains words like "fat".  I believe this is not a concern because instances where this happens is uncommon, and cases where this happen should be fairly uniformly distributed and low compared to the amount of real profanities that happen in the chat log.  I also made sure that hero names would not trigger this, because it could cause my method to think there are more profanities in games where some heroes appear, only because their name is "profane".  There is two instances where this could cause a problem, there are two characters that have "assassin" in their names.  These characters are Phantom Assassin and Templar Assassin, I do not believe this will cause many problems because in communication these characters names are shortened because they are long to PA and TA respectively.</p>
+</body>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -882,7 +913,9 @@ Notes:
 </div>
 </div>
 </div>
-
+<body>
+<p> Here is the table that was produced. Profanities per play is the amount of profanities that were seen per game, on average.</p>
+<body>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -1047,7 +1080,11 @@ Notes:
 </div>
 
 </div>
+<body>
+<p> Meepo has the highest profanity count per games played</p>
 
+<p>Now that I have gathered some information about the frequencies of profanities, I want to see if there is some relation to winrate.  My hypothesis is that winrate will be correlated with toxicity.  If people are toxic because they are losing, we should see that heroes that lose more games, are more toxic.</p>
+</body>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
