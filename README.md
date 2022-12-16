@@ -14,10 +14,9 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#data from opendota</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -49,7 +48,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I want to make the player_slot to match between all tables, so I will change it to a standard</span>
@@ -82,7 +81,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
@@ -311,7 +310,7 @@ A key part of the game features a voice chat system, where players can talk to t
     </tr>
   </tbody>
 </table>
-<p>499963 rows × 14 columns</p>
+<p>499963 rows </p>
 </div>
 </div>
 
@@ -326,7 +325,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Finding the highest winrate heroes</span>
@@ -357,9 +356,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
@@ -429,804 +426,12 @@ A key part of the game features a voice chat system, where players can talk to t
       <td>Kunkka</td>
     </tr>
     <tr>
-      <th>102</th>
-      <td>104</td>
-      <td>4778</td>
-      <td>9025.0</td>
-      <td>0.529418</td>
-      <td>Legion Commander</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>63</td>
-      <td>1356</td>
-      <td>2566.0</td>
-      <td>0.528449</td>
-      <td>Weaver</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>37</td>
-      <td>988</td>
-      <td>1871.0</td>
-      <td>0.528060</td>
-      <td>Warlock</td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td>98</td>
-      <td>1548</td>
-      <td>2934.0</td>
-      <td>0.527607</td>
-      <td>Timbersaw</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>67</td>
-      <td>3513</td>
-      <td>6660.0</td>
-      <td>0.527477</td>
-      <td>Spectre</td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td>84</td>
-      <td>2296</td>
-      <td>4353.0</td>
-      <td>0.527452</td>
-      <td>Ogre Magi</td>
-    </tr>
-    <tr>
-      <th>104</th>
-      <td>106</td>
-      <td>3973</td>
-      <td>7533.0</td>
-      <td>0.527413</td>
-      <td>Ember Spirit</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>56</td>
-      <td>1307</td>
-      <td>2479.0</td>
-      <td>0.527229</td>
-      <td>Clinkz</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>18</td>
-      <td>1818</td>
-      <td>3450.0</td>
-      <td>0.526957</td>
-      <td>Sven</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>46</td>
-      <td>3183</td>
-      <td>6042.0</td>
-      <td>0.526812</td>
-      <td>Templar Assassin</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>91</td>
-      <td>892</td>
-      <td>1694.0</td>
-      <td>0.526564</td>
-      <td>Io</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>32</td>
-      <td>2179</td>
-      <td>4140.0</td>
-      <td>0.526329</td>
-      <td>Riki</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>75</td>
-      <td>3801</td>
-      <td>7224.0</td>
-      <td>0.526163</td>
-      <td>Silencer</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>54</td>
-      <td>1359</td>
-      <td>2585.0</td>
-      <td>0.525725</td>
-      <td>Lifestealer</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>22</td>
-      <td>2412</td>
-      <td>4589.0</td>
-      <td>0.525605</td>
-      <td>Zeus</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>36</td>
-      <td>3137</td>
-      <td>5969.0</td>
-      <td>0.525549</td>
-      <td>Necrophos</td>
-    </tr>
-    <tr>
-      <th>83</th>
-      <td>85</td>
-      <td>3123</td>
-      <td>5951.0</td>
-      <td>0.524786</td>
-      <td>Undying</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>39</td>
-      <td>5556</td>
-      <td>10590.0</td>
-      <td>0.524646</td>
-      <td>Queen of Pain</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>19</td>
-      <td>2783</td>
-      <td>5305.0</td>
-      <td>0.524599</td>
-      <td>Tiny</td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td>100</td>
-      <td>5406</td>
-      <td>10306.0</td>
-      <td>0.524549</td>
-      <td>Tusk</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>26</td>
-      <td>3870</td>
-      <td>7382.0</td>
-      <td>0.524248</td>
-      <td>Lion</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>12</td>
-      <td>1912</td>
-      <td>3650.0</td>
-      <td>0.523836</td>
-      <td>Phantom Lancer</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>62</td>
-      <td>3557</td>
-      <td>6793.0</td>
-      <td>0.523627</td>
-      <td>Bounty Hunter</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>25</td>
-      <td>4320</td>
-      <td>8255.0</td>
-      <td>0.523319</td>
-      <td>Lina</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>4104</td>
-      <td>7846.0</td>
-      <td>0.523069</td>
-      <td>Crystal Maiden</td>
-    </tr>
-    <tr>
-      <th>74</th>
-      <td>76</td>
-      <td>818</td>
-      <td>1564.0</td>
-      <td>0.523018</td>
-      <td>Outworld Devourer</td>
-    </tr>
-    <tr>
-      <th>95</th>
-      <td>97</td>
-      <td>1794</td>
-      <td>3431.0</td>
-      <td>0.522880</td>
-      <td>Magnus</td>
-    </tr>
-    <tr>
-      <th>79</th>
-      <td>81</td>
-      <td>1225</td>
-      <td>2344.0</td>
-      <td>0.522611</td>
-      <td>Chaos Knight</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>68</td>
-      <td>3529</td>
-      <td>6753.0</td>
-      <td>0.522583</td>
-      <td>Ancient Apparition</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>92</td>
-      <td>521</td>
-      <td>997.0</td>
-      <td>0.522568</td>
-      <td>Visage</td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td>111</td>
-      <td>527</td>
-      <td>1009.0</td>
-      <td>0.522299</td>
-      <td>Oracle</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>60</td>
-      <td>1578</td>
-      <td>3023.0</td>
-      <td>0.521998</td>
-      <td>Night Stalker</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>14</td>
-      <td>4930</td>
-      <td>9447.0</td>
-      <td>0.521859</td>
-      <td>Pudge</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>65</td>
-      <td>550</td>
-      <td>1054.0</td>
-      <td>0.521822</td>
-      <td>Batrider</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>4899</td>
-      <td>9396.0</td>
-      <td>0.521392</td>
-      <td>Anti-Mage</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>49</td>
-      <td>1001</td>
-      <td>1920.0</td>
-      <td>0.521354</td>
-      <td>Dragon Knight</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>88</td>
-      <td>1408</td>
-      <td>2701.0</td>
-      <td>0.521288</td>
-      <td>Nyx Assassin</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>43</td>
-      <td>897</td>
-      <td>1721.0</td>
-      <td>0.521209</td>
-      <td>Death Prophet</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>2395</td>
-      <td>4601.0</td>
-      <td>0.520539</td>
-      <td>Axe</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>21</td>
-      <td>10867</td>
-      <td>20881.0</td>
-      <td>0.520425</td>
-      <td>Windranger</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>41</td>
-      <td>1661</td>
-      <td>3193.0</td>
-      <td>0.520200</td>
-      <td>Faceless Void</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>64</td>
-      <td>1429</td>
-      <td>2748.0</td>
-      <td>0.520015</td>
-      <td>Jakiro</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>30</td>
-      <td>3807</td>
-      <td>7321.0</td>
-      <td>0.520011</td>
-      <td>Witch Doctor</td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td>96</td>
-      <td>965</td>
-      <td>1857.0</td>
-      <td>0.519655</td>
-      <td>Centaur Warrunner</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>9</td>
-      <td>3746</td>
-      <td>7210.0</td>
-      <td>0.519556</td>
-      <td>Mirana</td>
-    </tr>
-    <tr>
-      <th>93</th>
-      <td>95</td>
-      <td>912</td>
-      <td>1756.0</td>
-      <td>0.519362</td>
-      <td>Troll Warlord</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>86</td>
-      <td>4246</td>
-      <td>8183.0</td>
-      <td>0.518881</td>
-      <td>Rubick</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7</td>
-      <td>5873</td>
-      <td>11323.0</td>
-      <td>0.518679</td>
-      <td>Earthshaker</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>69</td>
-      <td>4117</td>
-      <td>7938.0</td>
-      <td>0.518644</td>
-      <td>Doom</td>
-    </tr>
-    <tr>
-      <th>103</th>
-      <td>105</td>
-      <td>641</td>
-      <td>1236.0</td>
-      <td>0.518608</td>
-      <td>Techies</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>44</td>
-      <td>3775</td>
-      <td>7280.0</td>
-      <td>0.518544</td>
-      <td>Phantom Assassin</td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td>109</td>
-      <td>804</td>
-      <td>1551.0</td>
-      <td>0.518375</td>
-      <td>Terrorblade</td>
-    </tr>
-    <tr>
-      <th>92</th>
-      <td>94</td>
-      <td>1223</td>
-      <td>2360.0</td>
-      <td>0.518220</td>
-      <td>Medusa</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>73</td>
-      <td>5087</td>
-      <td>9823.0</td>
-      <td>0.517866</td>
-      <td>Alchemist</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>42</td>
-      <td>4036</td>
-      <td>7794.0</td>
-      <td>0.517834</td>
-      <td>Wraith King</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>57</td>
-      <td>2670</td>
-      <td>5161.0</td>
-      <td>0.517342</td>
-      <td>Omniknight</td>
-    </tr>
-    <tr>
-      <th>110</th>
-      <td>112</td>
-      <td>3981</td>
-      <td>7697.0</td>
-      <td>0.517214</td>
-      <td>Winter Wyvern</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>1319</td>
-      <td>2553.0</td>
-      <td>0.516647</td>
-      <td>Bane</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>16</td>
-      <td>1627</td>
-      <td>3150.0</td>
-      <td>0.516508</td>
-      <td>Sand King</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>11</td>
-      <td>8784</td>
-      <td>17007.0</td>
-      <td>0.516493</td>
-      <td>Shadow Fiend</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>47</td>
-      <td>1905</td>
-      <td>3690.0</td>
-      <td>0.516260</td>
-      <td>Viper</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>50</td>
-      <td>4338</td>
-      <td>8403.0</td>
-      <td>0.516244</td>
-      <td>Dazzle</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>74</td>
-      <td>6025</td>
-      <td>11676.0</td>
-      <td>0.516016</td>
-      <td>Invoker</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>35</td>
-      <td>1964</td>
-      <td>3809.0</td>
-      <td>0.515621</td>
-      <td>Sniper</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>28</td>
-      <td>5764</td>
-      <td>11181.0</td>
-      <td>0.515517</td>
-      <td>Slardar</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>40</td>
-      <td>1554</td>
-      <td>3015.0</td>
-      <td>0.515423</td>
-      <td>Venomancer</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>1523</td>
-      <td>2956.0</td>
-      <td>0.515223</td>
-      <td>Bloodseeker</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>13</td>
-      <td>907</td>
-      <td>1761.0</td>
-      <td>0.515048</td>
-      <td>Puck</td>
-    </tr>
-    <tr>
-      <th>97</th>
-      <td>99</td>
-      <td>2145</td>
-      <td>4167.0</td>
-      <td>0.514759</td>
-      <td>Bristleback</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>87</td>
-      <td>2445</td>
-      <td>4750.0</td>
-      <td>0.514737</td>
-      <td>Disruptor</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>66</td>
-      <td>298</td>
-      <td>579.0</td>
-      <td>0.514680</td>
-      <td>Chen</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>51</td>
-      <td>2213</td>
-      <td>4301.0</td>
-      <td>0.514532</td>
-      <td>Clockwerk</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>110</td>
-      <td>1557</td>
-      <td>3029.0</td>
-      <td>0.514031</td>
-      <td>Phoenix</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>17</td>
-      <td>1237</td>
-      <td>2407.0</td>
-      <td>0.513918</td>
-      <td>Storm Spirit</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>58</td>
-      <td>522</td>
-      <td>1016.0</td>
-      <td>0.513780</td>
-      <td>Enchantress</td>
-    </tr>
-    <tr>
-      <th>81</th>
-      <td>83</td>
-      <td>894</td>
-      <td>1742.0</td>
-      <td>0.513203</td>
-      <td>Treant Protector</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>93</td>
-      <td>4322</td>
-      <td>8426.0</td>
-      <td>0.512936</td>
-      <td>Slark</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>31</td>
-      <td>2403</td>
-      <td>4687.0</td>
-      <td>0.512695</td>
-      <td>Lich</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>89</td>
-      <td>513</td>
-      <td>1001.0</td>
-      <td>0.512488</td>
-      <td>Naga Siren</td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td>71</td>
-      <td>3746</td>
-      <td>7311.0</td>
-      <td>0.512379</td>
-      <td>Spirit Breaker</td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td>101</td>
-      <td>1524</td>
-      <td>2976.0</td>
-      <td>0.512097</td>
-      <td>Skywrath Mage</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>20</td>
-      <td>2146</td>
-      <td>4194.0</td>
-      <td>0.511683</td>
-      <td>Vengeful Spirit</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>10</td>
-      <td>778</td>
-      <td>1524.0</td>
-      <td>0.510499</td>
-      <td>Morphling</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>72</td>
-      <td>3499</td>
-      <td>6856.0</td>
-      <td>0.510356</td>
-      <td>Gyrocopter</td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td>78</td>
-      <td>475</td>
-      <td>931.0</td>
-      <td>0.510204</td>
-      <td>Brewmaster</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>52</td>
-      <td>625</td>
-      <td>1226.0</td>
-      <td>0.509788</td>
-      <td>Leshrac</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>33</td>
-      <td>1314</td>
-      <td>2579.0</td>
-      <td>0.509500</td>
-      <td>Enigma</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>55</td>
-      <td>2149</td>
-      <td>4219.0</td>
-      <td>0.509362</td>
-      <td>Dark Seer</td>
-    </tr>
-    <tr>
-      <th>105</th>
-      <td>107</td>
-      <td>1430</td>
-      <td>2808.0</td>
-      <td>0.509259</td>
-      <td>Earth Spirit</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>34</td>
-      <td>1329</td>
-      <td>2610.0</td>
-      <td>0.509195</td>
-      <td>Tinker</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>8</td>
-      <td>5279</td>
-      <td>10394.0</td>
-      <td>0.507889</td>
-      <td>Juggernaut</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>53</td>
-      <td>1698</td>
-      <td>3344.0</td>
-      <td>0.507775</td>
-      <td>Nature's Prophet</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>29</td>
-      <td>1217</td>
-      <td>2400.0</td>
-      <td>0.507083</td>
-      <td>Tidehunter</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>6</td>
-      <td>1322</td>
-      <td>2608.0</td>
-      <td>0.506902</td>
-      <td>Drow Ranger</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>45</td>
-      <td>769</td>
-      <td>1522.0</td>
-      <td>0.505256</td>
-      <td>Pugna</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>70</td>
-      <td>2172</td>
-      <td>4302.0</td>
-      <td>0.504881</td>
-      <td>Ursa</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>61</td>
-      <td>750</td>
-      <td>1486.0</td>
-      <td>0.504711</td>
-      <td>Broodmother</td>
-    </tr>
-    <tr>
-      <th>77</th>
-      <td>79</td>
-      <td>701</td>
-      <td>1395.0</td>
-      <td>0.502509</td>
-      <td>Shadow Demon</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>38</td>
-      <td>630</td>
-      <td>1261.0</td>
-      <td>0.499603</td>
-      <td>Beastmaster</td>
-    </tr>
-    <tr>
-      <th>75</th>
-      <td>77</td>
-      <td>491</td>
-      <td>985.0</td>
-      <td>0.498477</td>
-      <td>Lycan</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>80</th>
@@ -1270,6 +475,7 @@ A key part of the game features a voice chat system, where players can talk to t
     </tr>
   </tbody>
 </table>
+
 </div>
 </div>
 
@@ -1284,7 +490,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#finding the highest winrate items</span>
@@ -1329,7 +535,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
@@ -1450,7 +656,7 @@ A key part of the game features a voice chat system, where players can talk to t
     </tr>
   </tbody>
 </table>
-<p>149 rows × 5 columns</p>
+<p>149 rows</p>
 </div>
 </div>
 
@@ -1465,7 +671,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -1552,7 +758,7 @@ A key part of the game features a voice chat system, where players can talk to t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Finding out if K/D/A predicts win%</span>
@@ -1623,7 +829,7 @@ Notes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">profanities_text</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;bad_words.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
@@ -1640,7 +846,7 @@ Notes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">slur_count</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
@@ -1664,7 +870,6 @@ Notes:
 
 <span class="n">hero_swears</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">hero_list</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;profanities&#39;</span><span class="p">)</span>
 <span class="n">swears_per_hero</span> <span class="o">=</span> <span class="n">swears_per_hero</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">hero_swears</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;hero_id&#39;</span><span class="p">,</span><span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1">#lost after here for some reason</span>
 <span class="n">swears_per_hero</span> <span class="o">=</span> <span class="n">hero_play_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">swears_per_hero</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;hero_id&#39;</span><span class="p">)</span>
 <span class="n">swears_per_hero</span> <span class="o">=</span> <span class="n">swears_per_hero</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;localized_name_y&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;localized_name_x&#39;</span><span class="p">:</span><span class="s1">&#39;localized_name&#39;</span><span class="p">})</span>
 <span class="n">swears_per_hero</span><span class="p">[</span><span class="s1">&#39;profanities_per_play&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">swears_per_hero</span><span class="p">[</span><span class="s1">&#39;profanities&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">swears_per_hero</span><span class="p">[</span><span class="s1">&#39;hero_plays&#39;</span><span class="p">]</span>
@@ -1687,7 +892,7 @@ Notes:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
@@ -1771,1004 +976,14 @@ Notes:
       <td>0.188982</td>
     </tr>
     <tr>
-      <th>50</th>
-      <td>95</td>
-      <td>912</td>
-      <td>1756.0</td>
-      <td>0.519362</td>
-      <td>Troll Warlord</td>
-      <td>330</td>
-      <td>0.187927</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>98</td>
-      <td>1548</td>
-      <td>2934.0</td>
-      <td>0.527607</td>
-      <td>Timbersaw</td>
-      <td>546</td>
-      <td>0.186094</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>10</td>
-      <td>778</td>
-      <td>1524.0</td>
-      <td>0.510499</td>
-      <td>Morphling</td>
-      <td>283</td>
-      <td>0.185696</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>14</td>
-      <td>4930</td>
-      <td>9447.0</td>
-      <td>0.521859</td>
-      <td>Pudge</td>
-      <td>1746</td>
-      <td>0.184821</td>
-    </tr>
-    <tr>
-      <th>101</th>
-      <td>61</td>
-      <td>750</td>
-      <td>1486.0</td>
-      <td>0.504711</td>
-      <td>Broodmother</td>
-      <td>257</td>
-      <td>0.172948</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>22</td>
-      <td>2412</td>
-      <td>4589.0</td>
-      <td>0.525605</td>
-      <td>Zeus</td>
-      <td>785</td>
-      <td>0.171061</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>106</td>
-      <td>3973</td>
-      <td>7533.0</td>
-      <td>0.527413</td>
-      <td>Ember Spirit</td>
-      <td>1273</td>
-      <td>0.168990</td>
-    </tr>
-    <tr>
-      <th>83</th>
-      <td>89</td>
-      <td>513</td>
-      <td>1001.0</td>
-      <td>0.512488</td>
-      <td>Naga Siren</td>
-      <td>168</td>
-      <td>0.167832</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>78</td>
-      <td>475</td>
-      <td>931.0</td>
-      <td>0.510204</td>
-      <td>Brewmaster</td>
-      <td>156</td>
-      <td>0.167562</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>74</td>
-      <td>6025</td>
-      <td>11676.0</td>
-      <td>0.516016</td>
-      <td>Invoker</td>
-      <td>1942</td>
-      <td>0.166324</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>59</td>
-      <td>1877</td>
-      <td>3782.0</td>
-      <td>0.496298</td>
-      <td>Huskar</td>
-      <td>626</td>
-      <td>0.165521</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>19</td>
-      <td>2783</td>
-      <td>5305.0</td>
-      <td>0.524599</td>
-      <td>Tiny</td>
-      <td>874</td>
-      <td>0.164750</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>18</td>
-      <td>1818</td>
-      <td>3450.0</td>
-      <td>0.526957</td>
-      <td>Sven</td>
-      <td>567</td>
-      <td>0.164348</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>25</td>
-      <td>4320</td>
-      <td>8255.0</td>
-      <td>0.523319</td>
-      <td>Lina</td>
-      <td>1354</td>
-      <td>0.164022</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>76</td>
-      <td>818</td>
-      <td>1564.0</td>
-      <td>0.523018</td>
-      <td>Outworld Devourer</td>
-      <td>256</td>
-      <td>0.163683</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>3</td>
-      <td>1319</td>
-      <td>2553.0</td>
-      <td>0.516647</td>
-      <td>Bane</td>
-      <td>415</td>
-      <td>0.162554</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>46</td>
-      <td>3183</td>
-      <td>6042.0</td>
-      <td>0.526812</td>
-      <td>Templar Assassin</td>
-      <td>979</td>
-      <td>0.162032</td>
-    </tr>
-    <tr>
-      <th>77</th>
-      <td>110</td>
-      <td>1557</td>
-      <td>3029.0</td>
-      <td>0.514031</td>
-      <td>Phoenix</td>
-      <td>486</td>
-      <td>0.160449</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>32</td>
-      <td>2179</td>
-      <td>4140.0</td>
-      <td>0.526329</td>
-      <td>Riki</td>
-      <td>662</td>
-      <td>0.159903</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>2</td>
-      <td>2395</td>
-      <td>4601.0</td>
-      <td>0.520539</td>
-      <td>Axe</td>
-      <td>734</td>
-      <td>0.159531</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>111</td>
-      <td>527</td>
-      <td>1009.0</td>
-      <td>0.522299</td>
-      <td>Oracle</td>
-      <td>160</td>
-      <td>0.158573</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>21</td>
-      <td>10867</td>
-      <td>20881.0</td>
-      <td>0.520425</td>
-      <td>Windranger</td>
-      <td>3294</td>
-      <td>0.157751</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>39</td>
-      <td>5556</td>
-      <td>10590.0</td>
-      <td>0.524646</td>
-      <td>Queen of Pain</td>
-      <td>1668</td>
-      <td>0.157507</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>15</td>
-      <td>1072</td>
-      <td>2017.0</td>
-      <td>0.531482</td>
-      <td>Razor</td>
-      <td>316</td>
-      <td>0.156668</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>41</td>
-      <td>1661</td>
-      <td>3193.0</td>
-      <td>0.520200</td>
-      <td>Faceless Void</td>
-      <td>498</td>
-      <td>0.155966</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>86</td>
-      <td>4246</td>
-      <td>8183.0</td>
-      <td>0.518881</td>
-      <td>Rubick</td>
-      <td>1271</td>
-      <td>0.155322</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>91</td>
-      <td>892</td>
-      <td>1694.0</td>
-      <td>0.526564</td>
-      <td>Io</td>
-      <td>263</td>
-      <td>0.155254</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>37</td>
-      <td>988</td>
-      <td>1871.0</td>
-      <td>0.528060</td>
-      <td>Warlock</td>
-      <td>290</td>
-      <td>0.154997</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>11</td>
-      <td>8784</td>
-      <td>17007.0</td>
-      <td>0.516493</td>
-      <td>Shadow Fiend</td>
-      <td>2634</td>
-      <td>0.154877</td>
-    </tr>
-    <tr>
-      <th>102</th>
-      <td>79</td>
-      <td>701</td>
-      <td>1395.0</td>
-      <td>0.502509</td>
-      <td>Shadow Demon</td>
-      <td>215</td>
-      <td>0.154122</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>33</td>
-      <td>1314</td>
-      <td>2579.0</td>
-      <td>0.509500</td>
-      <td>Enigma</td>
-      <td>396</td>
-      <td>0.153548</td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td>53</td>
-      <td>1698</td>
-      <td>3344.0</td>
-      <td>0.507775</td>
-      <td>Nature's Prophet</td>
-      <td>512</td>
-      <td>0.153110</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>71</td>
-      <td>3746</td>
-      <td>7311.0</td>
-      <td>0.512379</td>
-      <td>Spirit Breaker</td>
-      <td>1113</td>
-      <td>0.152236</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>109</td>
-      <td>804</td>
-      <td>1551.0</td>
-      <td>0.518375</td>
-      <td>Terrorblade</td>
-      <td>236</td>
-      <td>0.152160</td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td>28</td>
-      <td>5764</td>
-      <td>11181.0</td>
-      <td>0.515517</td>
-      <td>Slardar</td>
-      <td>1691</td>
-      <td>0.151239</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>69</td>
-      <td>4117</td>
-      <td>7938.0</td>
-      <td>0.518644</td>
-      <td>Doom</td>
-      <td>1194</td>
-      <td>0.150416</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>96</td>
-      <td>965</td>
-      <td>1857.0</td>
-      <td>0.519655</td>
-      <td>Centaur Warrunner</td>
-      <td>278</td>
-      <td>0.149704</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>85</td>
-      <td>3123</td>
-      <td>5951.0</td>
-      <td>0.524786</td>
-      <td>Undying</td>
-      <td>889</td>
-      <td>0.149387</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>56</td>
-      <td>1307</td>
-      <td>2479.0</td>
-      <td>0.527229</td>
-      <td>Clinkz</td>
-      <td>370</td>
-      <td>0.149254</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>104</td>
-      <td>4778</td>
-      <td>9025.0</td>
-      <td>0.529418</td>
-      <td>Legion Commander</td>
-      <td>1343</td>
-      <td>0.148809</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>52</td>
-      <td>625</td>
-      <td>1226.0</td>
-      <td>0.509788</td>
-      <td>Leshrac</td>
-      <td>182</td>
-      <td>0.148450</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>13</td>
-      <td>907</td>
-      <td>1761.0</td>
-      <td>0.515048</td>
-      <td>Puck</td>
-      <td>261</td>
-      <td>0.148211</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>101</td>
-      <td>1524</td>
-      <td>2976.0</td>
-      <td>0.512097</td>
-      <td>Skywrath Mage</td>
-      <td>441</td>
-      <td>0.148185</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>63</td>
-      <td>1356</td>
-      <td>2566.0</td>
-      <td>0.528449</td>
-      <td>Weaver</td>
-      <td>380</td>
-      <td>0.148090</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>16</td>
-      <td>1627</td>
-      <td>3150.0</td>
-      <td>0.516508</td>
-      <td>Sand King</td>
-      <td>464</td>
-      <td>0.147302</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>100</td>
-      <td>5406</td>
-      <td>10306.0</td>
-      <td>0.524549</td>
-      <td>Tusk</td>
-      <td>1518</td>
-      <td>0.147293</td>
-    </tr>
-    <tr>
-      <th>104</th>
-      <td>77</td>
-      <td>491</td>
-      <td>985.0</td>
-      <td>0.498477</td>
-      <td>Lycan</td>
-      <td>145</td>
-      <td>0.147208</td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td>34</td>
-      <td>1329</td>
-      <td>2610.0</td>
-      <td>0.509195</td>
-      <td>Tinker</td>
-      <td>384</td>
-      <td>0.147126</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>1</td>
-      <td>4899</td>
-      <td>9396.0</td>
-      <td>0.521392</td>
-      <td>Anti-Mage</td>
-      <td>1378</td>
-      <td>0.146658</td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td>51</td>
-      <td>2213</td>
-      <td>4301.0</td>
-      <td>0.514532</td>
-      <td>Clockwerk</td>
-      <td>630</td>
-      <td>0.146478</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>9</td>
-      <td>3746</td>
-      <td>7210.0</td>
-      <td>0.519556</td>
-      <td>Mirana</td>
-      <td>1055</td>
-      <td>0.146325</td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td>103</td>
-      <td>416</td>
-      <td>838.0</td>
-      <td>0.496420</td>
-      <td>Elder Titan</td>
-      <td>122</td>
-      <td>0.145585</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>88</td>
-      <td>1408</td>
-      <td>2701.0</td>
-      <td>0.521288</td>
-      <td>Nyx Assassin</td>
-      <td>393</td>
-      <td>0.145502</td>
-    </tr>
-    <tr>
-      <th>78</th>
-      <td>17</td>
-      <td>1237</td>
-      <td>2407.0</td>
-      <td>0.513918</td>
-      <td>Storm Spirit</td>
-      <td>349</td>
-      <td>0.144994</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>67</td>
-      <td>3513</td>
-      <td>6660.0</td>
-      <td>0.527477</td>
-      <td>Spectre</td>
-      <td>956</td>
-      <td>0.143544</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>99</td>
-      <td>2145</td>
-      <td>4167.0</td>
-      <td>0.514759</td>
-      <td>Bristleback</td>
-      <td>598</td>
-      <td>0.143509</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>60</td>
-      <td>1578</td>
-      <td>3023.0</td>
-      <td>0.521998</td>
-      <td>Night Stalker</td>
-      <td>433</td>
-      <td>0.143235</td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td>45</td>
-      <td>769</td>
-      <td>1522.0</td>
-      <td>0.505256</td>
-      <td>Pugna</td>
-      <td>218</td>
-      <td>0.143233</td>
-    </tr>
-    <tr>
-      <th>81</th>
-      <td>93</td>
-      <td>4322</td>
-      <td>8426.0</td>
-      <td>0.512936</td>
-      <td>Slark</td>
-      <td>1206</td>
-      <td>0.143128</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>97</td>
-      <td>1794</td>
-      <td>3431.0</td>
-      <td>0.522880</td>
-      <td>Magnus</td>
-      <td>489</td>
-      <td>0.142524</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>35</td>
-      <td>1964</td>
-      <td>3809.0</td>
-      <td>0.515621</td>
-      <td>Sniper</td>
-      <td>538</td>
-      <td>0.141244</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>43</td>
-      <td>897</td>
-      <td>1721.0</td>
-      <td>0.521209</td>
-      <td>Death Prophet</td>
-      <td>243</td>
-      <td>0.141197</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>62</td>
-      <td>3557</td>
-      <td>6793.0</td>
-      <td>0.523627</td>
-      <td>Bounty Hunter</td>
-      <td>954</td>
-      <td>0.140439</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>44</td>
-      <td>3775</td>
-      <td>7280.0</td>
-      <td>0.518544</td>
-      <td>Phantom Assassin</td>
-      <td>1022</td>
-      <td>0.140385</td>
-    </tr>
-    <tr>
-      <th>95</th>
-      <td>8</td>
-      <td>5279</td>
-      <td>10394.0</td>
-      <td>0.507889</td>
-      <td>Juggernaut</td>
-      <td>1451</td>
-      <td>0.139600</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>36</td>
-      <td>3137</td>
-      <td>5969.0</td>
-      <td>0.525549</td>
-      <td>Necrophos</td>
-      <td>829</td>
-      <td>0.138884</td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td>6</td>
-      <td>1322</td>
-      <td>2608.0</td>
-      <td>0.506902</td>
-      <td>Drow Ranger</td>
-      <td>362</td>
-      <td>0.138804</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>68</td>
-      <td>3529</td>
-      <td>6753.0</td>
-      <td>0.522583</td>
-      <td>Ancient Apparition</td>
-      <td>931</td>
-      <td>0.137865</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>48</td>
-      <td>1270</td>
-      <td>2378.0</td>
-      <td>0.534062</td>
-      <td>Luna</td>
-      <td>327</td>
-      <td>0.137511</td>
-    </tr>
-    <tr>
-      <th>75</th>
-      <td>66</td>
-      <td>298</td>
-      <td>579.0</td>
-      <td>0.514680</td>
-      <td>Chen</td>
-      <td>79</td>
-      <td>0.136442</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>73</td>
-      <td>5087</td>
-      <td>9823.0</td>
-      <td>0.517866</td>
-      <td>Alchemist</td>
-      <td>1335</td>
-      <td>0.135906</td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td>31</td>
-      <td>2403</td>
-      <td>4687.0</td>
-      <td>0.512695</td>
-      <td>Lich</td>
-      <td>636</td>
-      <td>0.135694</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>57</td>
-      <td>2670</td>
-      <td>5161.0</td>
-      <td>0.517342</td>
-      <td>Omniknight</td>
-      <td>695</td>
-      <td>0.134664</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>92</td>
-      <td>521</td>
-      <td>997.0</td>
-      <td>0.522568</td>
-      <td>Visage</td>
-      <td>134</td>
-      <td>0.134403</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>26</td>
-      <td>3870</td>
-      <td>7382.0</td>
-      <td>0.524248</td>
-      <td>Lion</td>
-      <td>989</td>
-      <td>0.133975</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>7</td>
-      <td>5873</td>
-      <td>11323.0</td>
-      <td>0.518679</td>
-      <td>Earthshaker</td>
-      <td>1515</td>
-      <td>0.133798</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>81</td>
-      <td>1225</td>
-      <td>2344.0</td>
-      <td>0.522611</td>
-      <td>Chaos Knight</td>
-      <td>312</td>
-      <td>0.133106</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>23</td>
-      <td>1348</td>
-      <td>2543.0</td>
-      <td>0.530083</td>
-      <td>Kunkka</td>
-      <td>335</td>
-      <td>0.131734</td>
-    </tr>
-    <tr>
-      <th>97</th>
-      <td>29</td>
-      <td>1217</td>
-      <td>2400.0</td>
-      <td>0.507083</td>
-      <td>Tidehunter</td>
-      <td>315</td>
-      <td>0.131250</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>94</td>
-      <td>1223</td>
-      <td>2360.0</td>
-      <td>0.518220</td>
-      <td>Medusa</td>
-      <td>307</td>
-      <td>0.130085</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>54</td>
-      <td>1359</td>
-      <td>2585.0</td>
-      <td>0.525725</td>
-      <td>Lifestealer</td>
-      <td>336</td>
-      <td>0.129981</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>4</td>
-      <td>1523</td>
-      <td>2956.0</td>
-      <td>0.515223</td>
-      <td>Bloodseeker</td>
-      <td>384</td>
-      <td>0.129905</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>5</td>
-      <td>4104</td>
-      <td>7846.0</td>
-      <td>0.523069</td>
-      <td>Crystal Maiden</td>
-      <td>1013</td>
-      <td>0.129110</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>30</td>
-      <td>3807</td>
-      <td>7321.0</td>
-      <td>0.520011</td>
-      <td>Witch Doctor</td>
-      <td>942</td>
-      <td>0.128671</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>49</td>
-      <td>1001</td>
-      <td>1920.0</td>
-      <td>0.521354</td>
-      <td>Dragon Knight</td>
-      <td>247</td>
-      <td>0.128646</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>27</td>
-      <td>1909</td>
-      <td>3589.0</td>
-      <td>0.531903</td>
-      <td>Shadow Shaman</td>
-      <td>461</td>
-      <td>0.128448</td>
-    </tr>
-    <tr>
-      <th>106</th>
-      <td>90</td>
-      <td>1077</td>
-      <td>2167.0</td>
-      <td>0.497000</td>
-      <td>Keeper of the Light</td>
-      <td>276</td>
-      <td>0.127365</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>84</td>
-      <td>2296</td>
-      <td>4353.0</td>
-      <td>0.527452</td>
-      <td>Ogre Magi</td>
-      <td>554</td>
-      <td>0.127269</td>
-    </tr>
-    <tr>
-      <th>80</th>
-      <td>83</td>
-      <td>894</td>
-      <td>1742.0</td>
-      <td>0.513203</td>
-      <td>Treant Protector</td>
-      <td>220</td>
-      <td>0.126292</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>75</td>
-      <td>3801</td>
-      <td>7224.0</td>
-      <td>0.526163</td>
-      <td>Silencer</td>
-      <td>908</td>
-      <td>0.125692</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>112</td>
-      <td>3981</td>
-      <td>7697.0</td>
-      <td>0.517214</td>
-      <td>Winter Wyvern</td>
-      <td>963</td>
-      <td>0.125114</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>47</td>
-      <td>1905</td>
-      <td>3690.0</td>
-      <td>0.516260</td>
-      <td>Viper</td>
-      <td>460</td>
-      <td>0.124661</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>102</td>
-      <td>1764</td>
-      <td>3310.0</td>
-      <td>0.532931</td>
-      <td>Abaddon</td>
-      <td>412</td>
-      <td>0.124471</td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td>80</td>
-      <td>465</td>
-      <td>967.0</td>
-      <td>0.480869</td>
-      <td>Lone Druid</td>
-      <td>120</td>
-      <td>0.124095</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>64</td>
-      <td>1429</td>
-      <td>2748.0</td>
-      <td>0.520015</td>
-      <td>Jakiro</td>
-      <td>339</td>
-      <td>0.123362</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>72</td>
-      <td>3499</td>
-      <td>6856.0</td>
-      <td>0.510356</td>
-      <td>Gyrocopter</td>
-      <td>845</td>
-      <td>0.123250</td>
-    </tr>
-    <tr>
-      <th>92</th>
-      <td>55</td>
-      <td>2149</td>
-      <td>4219.0</td>
-      <td>0.509362</td>
-      <td>Dark Seer</td>
-      <td>518</td>
-      <td>0.122778</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>40</td>
-      <td>1554</td>
-      <td>3015.0</td>
-      <td>0.515423</td>
-      <td>Venomancer</td>
-      <td>370</td>
-      <td>0.122720</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>50</td>
-      <td>4338</td>
-      <td>8403.0</td>
-      <td>0.516244</td>
-      <td>Dazzle</td>
-      <td>1030</td>
-      <td>0.122575</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>42</td>
-      <td>4036</td>
-      <td>7794.0</td>
-      <td>0.517834</td>
-      <td>Wraith King</td>
-      <td>952</td>
-      <td>0.122145</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>74</th>
@@ -2822,6 +1037,7 @@ Notes:
     </tr>
   </tbody>
 </table>
+
 </div>
 </div>
 
@@ -2836,10 +1052,9 @@ Notes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Masking code from https://stackoverflow.com/questions/25516325/non-overlapping-scatter-plot-labels-using-matplotlib</span>
 <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">110</span>
@@ -2924,7 +1139,7 @@ Notes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">));</span>
@@ -2936,7 +1151,6 @@ Notes:
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Profanity rate&#39;</span><span class="p">)</span>
 
 <span class="n">ax</span>
-<span class="c1">#both Batrider and Meepo seem to be significant outliers</span>
 </pre></div>
 
      </div>
@@ -2954,14 +1168,9 @@ Notes:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;AxesSubplot:title={&#39;center&#39;:&#39;Profanities of Heroes&#39;}, xlabel=&#39;Profanity rate&#39;&gt;</pre>
-</div>
 
 </div>
 
@@ -2983,22 +1192,6 @@ Notes:
 
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div>
