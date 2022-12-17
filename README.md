@@ -23,7 +23,7 @@
 <div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"></span>
+<div class=" highlight hl-ipython3"><pre>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -44,7 +44,7 @@
 <span class="n">item_ids</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;item_ids.csv&#39;</span><span class="p">)</span>
 <span class="n">chat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;chat.csv&#39;</span><span class="p">)</span>
 </pre></div>
-
+</body>
 </div>
 </div>
 </div>
@@ -331,7 +331,7 @@
 </div>
 
 </div>
-## Testing something 4
+
 <body>
 <p>I was curious what heroes had the highest influence on the outcome on the game.  In the game there is usually a "meta" where players are influenced to pick the best heroes and items at the time in order to increase their chance of winning.  Having the breakdowns of winrates among the heroes is important!  Winrate of the heroes can effect many other things in this analysis because it can become a confounding variable.  Certain heroes build certain items more often than others and can have outcomes of the game hinge on them.</p>
 </body>
@@ -499,7 +499,7 @@
 </div>
 
 </div>
-## Testing something 3
+
 <body>
 <p>I wanted to explore which items had the highest win rate.  Item win rate is not something that people usually collect data for even though items are an important part of the game.  In matches, item choice can singlehandedly win games if <a href='https://www.youtube.com/watch?v=pSLfxEZVJVU'>done properly</a>.</p>
 
@@ -752,7 +752,6 @@
 </div>
 </div>
 
-## Testing something
 
 <body>
 <p> I think one of the most suprising insights I have found in the dataset is that there seems to be a negative correlation between the ID of the item and its winrate.  Complete items(Items that are not components of stronger items) seem to have higher IDs, but you would expect that complete items have a higher winrate than the basic items that can be bought for less gold and have weaker effects for the price of an item slot.  But there may be benefits to buying items to fill out your slots.  For instance, last year Wraith Band was an item that has been used with a hero called Sniper.  Sniper players would build multiple Wraith Bands and gain lots of stats cheaply.  Skilled players can use these extra stats early to get kills against enemy heroes and complete stronger items.  This may be happening with other heroes in the game too, leading to higher winrates for these items.  These extra stat items that sit in heroes inventories until the end of the game may be influencing the game in their favor.</p>
@@ -781,7 +780,6 @@
 </div>
 </div>
 
-## Testing something 2
 
 <body>
 <p>I decided I would also do analysis on kills, deaths, and assists (K/D/A) because I had the data readily available already.  Traditionally, you want to keep the amount of deaths you have low so that you do not give the other team gold.  I would expect that low deaths predict wins.  I used statsmodels to generate a multiple regression model with those as the inputs and printed the results.</p>
