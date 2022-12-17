@@ -5,12 +5,12 @@
 <body>
 <p>Dota 2 is a 5v5 MOBA(Multiplayer Online Battle Arena) where both teams work together to defeat the other team.  Each team selects 5 heroes for their players to play, each with unique abilities and quirks.  Heroes can also be augmented by leveling up and buying items.  These items can have many different effects, ranging from resetting the cooldowns of all abilities to reviving your hero immediately after death.  An important part of the game is being able to kill the enemy heroes, which grants gold for item purchases and experience for abiliy upgrades. </p>
 
-<p>A key part of the game features a voice chat system, where players can talk to their teammates to coordinate and cooperate.  There is also a text chat system which is also used for the same goals.  Some players out of frustration may use these means to insult or belittle their enemies, often players will do this to their fellow teamates.  While the players who do this are known as "toxic" in their communities, it is still very common to find players behaving like this in games.  Valve has implemented some systems, like behavior score, in order to seperate out these players from more friendly ones, but it does not remove these players from the game.  In my analysis, I chose to look at why some players may be more toxic than other players.<p>
+<p>A key part of the game features a voice chat system, where players can talk to their teammates to coordinate and cooperate.  There is also a text chat system which is also used for the same goals.  Some players out of frustration may use these means to insult or belittle their enemies, often players will do this to their fellow teamates.  While the players who do this are known as "toxic" in their communities, it is still very common to find players behaving like this in games.  Valve has implemented some systems, like behavior score, in order to seperate out these players from more friendly ones, but it does not remove these players from the game.  In my analysis, I chose to look at why some players may be more toxic than other players.</p>
 </body>
 
 ## Data Exploration
 <body>
-<p>The dataset I got from kaggle has 18 .csv files with many different bits of information. For this project I picked the 5 the sheets that are useful to the analysis. </p>
+<p>The dataset I got from kaggle has 18 .csv files with many different bits of information.  The data was last updated in 2019 at the time of writing, which means there may be different results than the ones I present today due to changes in how the game is played, and improvement in the Dota 2 culture.  According to the author of this dataset, the amount of data in this dataset accounts for about an hour of games played on the game's servers. For this project I picked the 5 the sheets that are useful to the analysis. </p>
 </body>
 
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
@@ -343,7 +343,7 @@
 <div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Finding the highest winrate heroes</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Finding the highest win rate heroes</span>
 <span class="n">players_data</span><span class="p">[</span><span class="s1">&#39;hero_won&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">players_data</span><span class="o">.</span><span class="n">apply</span><span class="p">((</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">hero_id</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">radiant_win</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">total_frequencies</span> <span class="o">=</span> <span class="n">players_data</span><span class="p">[</span><span class="s1">&#39;hero_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">win_frequencies</span> <span class="o">=</span> <span class="n">players_data</span><span class="p">[</span><span class="s1">&#39;hero_won&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -500,9 +500,9 @@
 </div>
 
 <body>
-<p>I wanted to explore which items had the highest winrate.  Item winrate is not something that people usually collect data for even though items are an important part of the game.  In matches, item choice can singlehandedly win games if <a href='https://www.youtube.com/watch?v=pSLfxEZVJVU'>done properly</a>.</p>
+<p>I wanted to explore which items had the highest win rate.  Item win rate is not something that people usually collect data for even though items are an important part of the game.  In matches, item choice can singlehandedly win games if <a href='https://www.youtube.com/watch?v=pSLfxEZVJVU'>done properly</a>.</p>
 
-<p>To do this, I carried across all the items that were in the inventories of winning players into new columns.  I then tallied these in order to find out their frequencies in winning games and across all the matches I won with. Among the winning items were recipies, which have no utility in the games other than building strong items.  I merged the table with the item id table, which has the recipes removed.  I choose to do an inner merge because I thought it was not valuable data to know the winrates of items that only win the game by chance.</p>
+<p>To do this, I carried across all the items that were in the inventories of winning players into new columns.  I then tallied these in order to find out their frequencies in winning games and across all the matches I won with. Among the winning items were recipies, which have no utility in the games other than building strong items.  I merged the table with the item id table, which has the recipes removed.  I chose to do an inner merge because I thought it was not valuable data to know the winrates of items that only win the game by chance.</p>
 </body>
 
 
@@ -514,7 +514,7 @@
 <div class="jp-InputPrompt jp-InputArea-prompt"></div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#finding the highest winrate items</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#finding the highest win rate items</span>
 <span class="n">players_data</span><span class="p">[</span><span class="s1">&#39;item_won0&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">players_data</span><span class="o">.</span><span class="n">apply</span><span class="p">((</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">item_0</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">radiant_win</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>    
 <span class="n">players_data</span><span class="p">[</span><span class="s1">&#39;item_won1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">players_data</span><span class="o">.</span><span class="n">apply</span><span class="p">((</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">item_1</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">radiant_win</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">players_data</span><span class="p">[</span><span class="s1">&#39;item_won2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">players_data</span><span class="o">.</span><span class="n">apply</span><span class="p">((</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">item_2</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">radiant_win</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -688,7 +688,7 @@
 </div>
 
 <body>
-<p>I think theres an argument to be made that tango, a healing item that can be built at the beginning of the game, is not winning matches because it's the strongest item in the game.  I think there may be a correlation with having tango in your inventory and winning the game because of other reasons.  It may be likely that people who did not use all the tango they bought in the beginning of the game did not need it because they were winning the game already.  Similar to the item at the bottom of the list, if you have a courier in your inventory you probably lost the game.  Not because that item is bad, but because if you have it in your inventory you most likely are not winning the game.</p>
+<p>I think there is an argument to be made that tango, a healing item that can be built at the beginning of the game, is not winning matches because it's the strongest item in the game.  I think there may be a correlation with having tango in your inventory and winning the game because of other reasons.  It may be likely that people who did not use all the tango they bought in the beginning of the game did not need it because they were winning the game already.  Similar to the item at the bottom of the list, if you have a courier in your inventory you probably lost the game.  Not because that item is bad, but because if you have it in your inventory you most likely are not winning the game because you haven't used it yet.</p>
 </body>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -751,6 +751,9 @@
 </div>
 </div>
 
+<body>
+<p> I think one of the most suprising insights I have found in the dataset is that there seems to be a negative correlation between the ID of the item and its winrate.  Complete items(Items that are not components of stronger items) seem to have higher IDs, but you would expect that complete items have a higher winrate than the basic items that can be bought for less gold and have weaker effects for the price of an item slot.  But there may be benefits to buying items to fill out your slots.  For instance, last year Wraith Band was an item that has been used with a hero called Sniper.  Sniper players would build multiple Wraith Bands and gain lots of stats cheaply.  Skilled players can use these extra stats early to get kills against enemy heroes and complete stronger items.  This may be happening with other heroes in the game too, leading to higher winrates for these items.  These extra stat items that sit in heroes inventories until the end of the game may be influencing the game in their favor.</p>
+</body>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -777,7 +780,9 @@
 </div>
 
 </div>
-
+<body>
+<p>I decided I would also do analysis on kills, deaths, and assists (K/D/A) because I had the data readily available already.  Traditionally, you want to keep the amount of deaths you have low so that you do not give the other team gold.  I would expect that low deaths predict wins.  I used statsmodels to generate a multiple regression model with those as the inputs and printed the results.</p>
+</body>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -846,12 +851,16 @@ Notes:
 </div>
 
 </div>
-
 </div>
+<body>
+<p>The results are not what I expected, the same coefficients between all three of the variables suggests that someone with the score 10/10/10 has a higher chance of winning than someone with the score 1/1/1.  I believe there may be a problem with the analysis, but this was done as a tangent, so I will not explore this further</p>
+</body>
+
+
 ## Looking At Profanities
 
 <body>
-<p>  In order to have a list of words that I can reference from without compiling my own, I decided to download a list <a href="https://www.freewebheaders.com/full-list-of-bad-words-banned-by-google/">The list I used is here</a> (I used Google's base list of bad words, comma-seperated).  If you want to recreate my results but do not want to download from this website, you can find any comma-seperated list of profane words/phrases and input them as a text file.  I decided against the full list because it takes about 20 minutes to complete the processing on my machine with the full list, while the base list took less than 5 minutes to complete.  This made testing my code and doing processing much faster, and it made sure that I could check for problems with the set much faster.  The full list also has words that are uncommon to see, which makes them not worth checking for if I just want a general layout of who uses profanities more.</p>
+<p>  In order to have a list of words that I can reference from without compiling my own, I decided to download a list <a href="https://www.freewebheaders.com/full-list-of-bad-words-banned-by-google/">The list I used is here</a> (I used Google's base list of bad words, comma-separated).  If you want to recreate my results but do not want to download from this website, you can find any comma-separated list of profane words/phrases and input them as a text file.  I decided against the full list because it takes about 20 minutes to complete the processing on my machine with the full list, while the base list took less than 5 minutes to complete.  This made testing my code and doing processing much faster, and it made sure that I could check for problems with the set much faster.  The full list also has words that are uncommon to see, which makes them not worth checking for if I just want a general layout of who uses profanities more.</p>
 </body>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -870,7 +879,7 @@ Notes:
 </div>
 </div>
 <body>
-<p>In my method, I use python's count() method, which naively checks if the word is in the string, ignoring if it is in the context of a larger word, like "fate", which caused problems with Google's full list, which contains words like "fat".  I believe this is not a concern because instances where this happens is uncommon, and cases where this happen should be fairly uniformly distributed and low compared to the amount of real profanities that happen in the chat log.  I also made sure that hero names would not trigger this, because it could cause my method to think there are more profanities in games where some heroes appear, only because their name is "profane".  There is two instances where this could cause a problem, there are two characters that have "assassin" in their names.  These characters are Phantom Assassin and Templar Assassin, I do not believe this will cause many problems because in communication these characters names are shortened because they are long to PA and TA respectively.</p>
+<p>In my method, I use python's count() method, which naively checks if the word is in the string, ignoring if it is in the context of a larger word, like "fate", which caused problems with Google's full list, which contains words like "fat".  I believe this is not a concern because instances where this happens is uncommon, and cases where this happen should be fairly uniformly distributed and low compared to the amount of real profanities that occur in the chat log.  I also made sure that hero names would not trigger this, because it could cause my method to think there are more profanities in games where some heroes appear, only because their name is "profane".  There is two instances where this could cause a problem, there are two characters that have "assassin" in their names.  These characters are Phantom Assassin and Templar Assassin, I do not believe this will cause many problems because in communication these characters names are shortened because they are long to PA and TA respectively.</p>
 </body>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -1081,9 +1090,9 @@ Notes:
 
 </div>
 <body>
-<p> Meepo has the highest profanity count per games played</p>
+<p> Meepo has the highest profanity count per games played.  More about our culprit for most toxic hero, Meepo is considered to be one of the most difficult heroes in the game due to the nature of the character's ability.  The player has to control the multiple clones of Meepo effectively if the player wants to win.  While this ability may seem very strong, if one of the clones die, all of the clones die together.  The difficulty of this hero could lead to the increase in profanity, but there are still other reasons why he could be at the top.  Meepo has a poor winrate compared to the other heroes and this could explain this poor behavior.</p>
 
-<p>Now that I have gathered some information about the frequencies of profanities, I want to see if there is some relation to winrate.  My hypothesis is that winrate will be correlated with toxicity.  If people are toxic because they are losing, we should see that heroes that lose more games, are more toxic.</p>
+<p>Now that I have gathered some information about the frequencies of profanities, I want to see if there is some relation to win rate.  My hypothesis is that win rate will be correlated with toxicity.  If people are toxic because they are losing, we should see that heroes that lose more games, are more toxic.</p>
 </body>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -1166,13 +1175,14 @@ Notes:
 "
 >
 </div>
-
 </div>
-
 </div>
-
 </div>
+<body>
+<p>There is no correlation between winrate and profanities in the dataset.  This makes it very unlikely that Meepo players are toxic due to the fact that they lose more games.  This could mean that Meepo is picked by players who want to intentionally throw games and be toxic.  But I think it is unlikely that there is this many players picking Meepo to lose games, considering I couldn't find any information on people <i>intentionally</i> picking this hero to lose games and that other heroes have abilities that are better for disrupting teamates.</p>
 
+<p>Just to make sure Meepo was an outlier in the aspect of profanities, I made a boxplot.</p>
+</body>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -1226,11 +1236,18 @@ Notes:
 "
 >
 </div>
-
+</div>
+</div>
 </div>
 
 </div>
+<body>
+<p>As expected, Meepo is an outlier in the dataset.  Batrider is the second point, a hero that I wouldn't have guessed is so toxic.  Batrider is a </p>
+</body>
 
-</div>
+## Conclusions Gathered
 
-</div>
+
+<body>
+<p>Meepo is the hero that stands out among others as the most toxic hero.  Speculatively, Meepo is likely the most toxic due to the compilcated and frustrating mechanics of the hero, and the role of the hero being the carry of the team.</p>
+</body>
