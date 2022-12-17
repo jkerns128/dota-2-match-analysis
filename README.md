@@ -852,6 +852,9 @@ Notes:
 
 </div>
 </div>
+</pre>
+</div>
+</div>
 </div>#ADDED HERE
 <body>
 <p>The results are not what I expected, the same coefficients between all three of the variables suggests that someone with the score 10/10/10 has a higher chance of winning than someone with the score 1/1/1.  I believe there may be a problem with the analysis, but this was done as a tangent, so I will be  exploring this further</p>
