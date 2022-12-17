@@ -1,5 +1,5 @@
 # Dota 2: What hero is the most toxic?
-
+![Dota 2's Logo](/dota-2-match-analysis/docs/assets/-21602609658mh8pp73cx9.png)
 ## Introduction
 
 <body>
@@ -7,6 +7,8 @@
 
 <p>A key part of the game features a voice chat system, where players can talk to their teammates to coordinate and cooperate.  There is also a text chat system which is also used for the same goals.  Some players out of frustration may use these means to insult or belittle their enemies, often players will do this to their fellow teamates.  While the players who do this are known as "toxic" in their communities, it is still very common to find players behaving like this in games.  Valve has implemented some systems, like behavior score, in order to seperate out these players from more friendly ones, but it does not remove these players from the game.  In my analysis, I chose to look at why some players may be more toxic than other players.</p>
 </body>
+
+![Dota 2's Map](/dota-2-match-analysis/docs/assets/Dota2-Map-Control-Featured.jpg)
 
 ## Data Exploration
 
@@ -1093,7 +1095,10 @@ Notes:
 </div>
 <body>
 <p> Meepo has the highest profanity count per games played.  More about our culprit for most toxic hero, Meepo is considered to be one of the most difficult heroes in the game due to the nature of the character's ability.  The player has to control the multiple clones of Meepo effectively if the player wants to win.  While this ability may seem very strong, if one of the clones die, all of the clones die together.  The difficulty of this hero could lead to the increase in profanity, but there are still other reasons why he could be at the top.  Meepo has a poor winrate compared to the other heroes and this could explain this poor behavior.</p>
+</body>
+![Meepo](/dota-2-match-analysis/docs/assets/Meepo_update_splash.png)
 
+<body>
 <p>Now that I have gathered some information about the frequencies of profanities, I want to see if there is some relation to win rate.  My hypothesis is that win rate will be correlated with toxicity.  If people are toxic because they are losing, we should see that heroes that lose more games, are more toxic.</p>
 </body>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
