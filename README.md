@@ -1248,7 +1248,7 @@ Notes:
 
 </div>
 <body>
-<p>As expected, Meepo is an outlier in the dataset.  Batrider is the second point, a hero that I wouldn't have guessed is so toxic.  Batrider is a </p>
+<p>As expected, Meepo is an outlier in the dataset.  Batrider is the second point, a hero that I wouldn't have guessed is so toxic.</p>
 </body>
 
 <h2> Conclusions Gathered and Further Research </h2>
