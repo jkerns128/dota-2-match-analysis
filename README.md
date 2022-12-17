@@ -751,6 +751,8 @@
 </div>
 </div>
 
+## Testing something
+
 <body>
 <p> I think one of the most suprising insights I have found in the dataset is that there seems to be a negative correlation between the ID of the item and its winrate.  Complete items(Items that are not components of stronger items) seem to have higher IDs, but you would expect that complete items have a higher winrate than the basic items that can be bought for less gold and have weaker effects for the price of an item slot.  But there may be benefits to buying items to fill out your slots.  For instance, last year Wraith Band was an item that has been used with a hero called Sniper.  Sniper players would build multiple Wraith Bands and gain lots of stats cheaply.  Skilled players can use these extra stats early to get kills against enemy heroes and complete stronger items.  This may be happening with other heroes in the game too, leading to higher winrates for these items.  These extra stat items that sit in heroes inventories until the end of the game may be influencing the game in their favor.</p>
 </body>
@@ -774,12 +776,12 @@
 "
 >
 </div>
-
+</div>
+</div>
 </div>
 
-</div>
+## Testing something 2
 
-</div>
 <body>
 <p>I decided I would also do analysis on kills, deaths, and assists (K/D/A) because I had the data readily available already.  Traditionally, you want to keep the amount of deaths you have low so that you do not give the other team gold.  I would expect that low deaths predict wins.  I used statsmodels to generate a multiple regression model with those as the inputs and printed the results.</p>
 </body>
@@ -815,7 +817,6 @@
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
@@ -852,10 +853,8 @@ Notes:
 
 </div>
 </div>
-</pre>
 </div>
-</div>
-</div>#ADDED HERE
+</span></span> #HERE
 <body>
 <p>The results are not what I expected, the same coefficients between all three of the variables suggests that someone with the score 10/10/10 has a higher chance of winning than someone with the score 1/1/1.  I believe there may be a problem with the analysis, but this was done as a tangent, so I will be  exploring this further</p>
 </body>
