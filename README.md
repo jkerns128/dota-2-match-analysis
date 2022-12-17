@@ -852,19 +852,19 @@ Notes:
 
 </div>
 </div>
-</div>
+
 <body>
 <p>The results are not what I expected, the same coefficients between all three of the variables suggests that someone with the score 10/10/10 has a higher chance of winning than someone with the score 1/1/1.  I believe there may be a problem with the analysis, but this was done as a tangent, so I will be  exploring this further</p>
 </body>
 
 
-## Looking At Profanities
+<h1> Looking At Profanities </h1>
 
 <body>
 <p>  In order to have a list of words that I can reference from without compiling my own, I decided to download a list <a href="https://www.freewebheaders.com/full-list-of-bad-words-banned-by-google/">The list I used is here</a> (I used Google's base list of bad words, comma-separated).  If you want to recreate my results but do not want to download from this website, you can find any comma-separated list of profane words/phrases and input them as a text file.  I decided against the full list because it takes about 20 minutes to complete the processing on my machine with the full list, while the base list took less than 5 minutes to complete.  This made testing my code and doing processing much faster, and it made sure that I could check for problems with the set much faster.  The full list also has words that are uncommon to see, which makes them not worth checking for if I just want a general layout of who uses profanities more.</p>
 </body>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1247,7 +1247,7 @@ Notes:
 <p>As expected, Meepo is an outlier in the dataset.  Batrider is the second point, a hero that I wouldn't have guessed is so toxic.  Batrider is a </p>
 </body>
 
-## Conclusions Gathered and Further Research
+<h1> Conclusions Gathered and Further Research </h1>
 
 
 <body>
