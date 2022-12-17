@@ -1,5 +1,5 @@
 # Dota 2: What hero is the most toxic?
-![Dota 2's Logo](/dota-2-match-analysis/docs/assets/-21602609658mh8pp73cx9.png)
+![Dota 2's Logo](/dota-2-match-analysis/docs/assets/Dota-2-Symbol.jpg)
 ## Introduction
 
 <body>
@@ -1098,7 +1098,7 @@ Notes:
 </body>
 </html>
 <html>
-![Meepo](/dota-2-match-analysis/docs/assets/Meepo_update_splash.png)
+![Meepo](/dota-2-match-analysis/docs/assets/Meepo_update_splash.webp)
 
 <body>
 <p>Now that I have gathered some information about the frequencies of profanities, I want to see if there is some relation to win rate.  My hypothesis is that win rate will be correlated with toxicity.  If people are toxic because they are losing, we should see that heroes that lose more games, are more toxic.</p>
