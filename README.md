@@ -46,7 +46,6 @@
 <span class="n">item_ids</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;item_ids.csv&#39;</span><span class="p">)</span>
 <span class="n">chat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;chat.csv&#39;</span><span class="p">)</span>
 </pre></div>
-</body>
 </div>
 </div>
 </div>
