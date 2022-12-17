@@ -1,5 +1,5 @@
 # Dota 2: What hero is the most toxic?
-![Dota 2's Logo](/dota-2-match-analysis/docs/assets/-21602609658mh8pp73cx9.png)
+![Dota 2's Logo](/dota-2-match-analysis/docs/assets/Dota-2-Symbol.jpg)
 ## Introduction
 
 <body>
