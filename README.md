@@ -9,6 +9,7 @@
 </body>
 
 ## Data Exploration
+
 <body>
 <p>The dataset I got from kaggle has 18 .csv files with many different bits of information.  The data was last updated in 2019 at the time of writing, which means there may be different results than the ones I present today due to changes in how the game is played, and improvement in the Dota 2 culture.  According to the author of this dataset, the amount of data in this dataset accounts for about an hour of games played on the game's servers. For this project I picked the 5 the sheets that are useful to the analysis. </p>
 </body>
@@ -330,7 +331,7 @@
 </div>
 
 </div>
-
+## Testing something 4
 <body>
 <p>I was curious what heroes had the highest influence on the outcome on the game.  In the game there is usually a "meta" where players are influenced to pick the best heroes and items at the time in order to increase their chance of winning.  Having the breakdowns of winrates among the heroes is important!  Winrate of the heroes can effect many other things in this analysis because it can become a confounding variable.  Certain heroes build certain items more often than others and can have outcomes of the game hinge on them.</p>
 </body>
@@ -498,7 +499,7 @@
 </div>
 
 </div>
-
+## Testing something 3
 <body>
 <p>I wanted to explore which items had the highest win rate.  Item win rate is not something that people usually collect data for even though items are an important part of the game.  In matches, item choice can singlehandedly win games if <a href='https://www.youtube.com/watch?v=pSLfxEZVJVU'>done properly</a>.</p>
 
@@ -854,7 +855,6 @@ Notes:
 </div>
 </div>
 </div>
-</span></span> #HERE
 <body>
 <p>The results are not what I expected, the same coefficients between all three of the variables suggests that someone with the score 10/10/10 has a higher chance of winning than someone with the score 1/1/1.  I believe there may be a problem with the analysis, but this was done as a tangent, so I will be  exploring this further</p>
 </body>
