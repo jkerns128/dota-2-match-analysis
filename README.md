@@ -1096,6 +1096,8 @@ Notes:
 <body>
 <p> Meepo has the highest profanity count per games played.  More about our culprit for most toxic hero, Meepo is considered to be one of the most difficult heroes in the game due to the nature of the character's ability.  The player has to control the multiple clones of Meepo effectively if the player wants to win.  While this ability may seem very strong, if one of the clones die, all of the clones die together.  The difficulty of this hero could lead to the increase in profanity, but there are still other reasons why he could be at the top.  Meepo has a poor winrate compared to the other heroes and this could explain this poor behavior.</p>
 </body>
+</html>
+<html>
 ![Meepo](/dota-2-match-analysis/docs/assets/Meepo_update_splash.png)
 
 <body>
