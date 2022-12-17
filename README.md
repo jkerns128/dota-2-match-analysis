@@ -858,7 +858,7 @@ Notes:
 </body>
 
 
-<h1> Looking At Profanities </h1>
+<h2> Looking At Profanities </h2>
 
 <body>
 <p>  In order to have a list of words that I can reference from without compiling my own, I decided to download a list <a href="https://www.freewebheaders.com/full-list-of-bad-words-banned-by-google/">The list I used is here</a> (I used Google's base list of bad words, comma-separated).  If you want to recreate my results but do not want to download from this website, you can find any comma-separated list of profane words/phrases and input them as a text file.  I decided against the full list because it takes about 20 minutes to complete the processing on my machine with the full list, while the base list took less than 5 minutes to complete.  This made testing my code and doing processing much faster, and it made sure that I could check for problems with the set much faster.  The full list also has words that are uncommon to see, which makes them not worth checking for if I just want a general layout of who uses profanities more.</p>
@@ -1247,7 +1247,7 @@ Notes:
 <p>As expected, Meepo is an outlier in the dataset.  Batrider is the second point, a hero that I wouldn't have guessed is so toxic.  Batrider is a </p>
 </body>
 
-<h1> Conclusions Gathered and Further Research </h1>
+<h2> Conclusions Gathered and Further Research </h2>
 
 
 <body>
