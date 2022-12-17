@@ -879,7 +879,7 @@ Notes:
 </div>
 </div>
 <body>
-<p>In my method, I use python's count() method, which naively checks if the word is in the string, ignoring if it is in the context of a larger word, like "fate", which caused problems with Google's full list, which contains words like "fat".  I believe this is not a concern because instances where this happens is uncommon, and cases where this happen should be fairly uniformly distributed and low compared to the amount of real profanities that occur in the chat log.  I also made sure that hero names would not trigger this, because it could cause my method to think there are more profanities in games where some heroes appear, only because their name is "profane".  There is two instances where this could cause a problem, there are two characters that have "assassin" in their names.  These characters are Phantom Assassin and Templar Assassin, I do not believe this will cause many problems because in communication these characters names are shortened because they are long to PA and TA respectively.</p>
+<p>To find out what messages contain profanities, and their amounts, I use python's count() method, which naively checks if the word is in the string, ignoring if it is in the context of a larger word, like "fate", which caused problems with Google's full list, which contains words like "fat".  I believe this is not a concern because instances where this happens is uncommon, and cases where this happen should be fairly uniformly distributed and low compared to the amount of real profanities that occur in the chat log.  I also made sure that hero names would not trigger this, because it could cause my method to think there are more profanities in games where some heroes appear, only because their name is "profane".  There is two instances where this could cause a problem, there are two characters that have "assassin" in their names.  These characters are Phantom Assassin and Templar Assassin, I do not believe this will cause many problems because in communication these characters names are shortened because they are long to PA and TA respectively.</p>
 </body>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -923,8 +923,8 @@ Notes:
 </div>
 </div>
 <body>
-<p> Here is the table that was produced. Profanities per play is the amount of profanities that were seen per game, on average.</p>
-<body>
+<p>Processing all 1.4 million messages takes a fair amount of time but the result allows us to see the counts of all of the heroes' profanities.  The table that was produced is below. Profanities per play is the amount of profanities that were seen per game, on average.</p>
+</body>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -1245,9 +1245,11 @@ Notes:
 <p>As expected, Meepo is an outlier in the dataset.  Batrider is the second point, a hero that I wouldn't have guessed is so toxic.  Batrider is a </p>
 </body>
 
-## Conclusions Gathered
+## Conclusions Gathered and Further Research
 
 
 <body>
-<p>Meepo is the hero that stands out among others as the most toxic hero.  Speculatively, Meepo is likely the most toxic due to the compilcated and frustrating mechanics of the hero, and the role of the hero being the carry of the team.</p>
+<p>Meepo is the hero that stands out among others as the most toxic hero.  Speculatively, I think Meepo is the most toxic due to the compilcated and frustrating mechanics of the hero, and the role of the hero being the carry of the team.</p>
+
+<p>Further research could look at the profanities in games vs the expected outcome at the time because players cannot know the outcome until the game is over.  This could be done by looking at the gold and experinence differences in the games.  Unfortunately, the data needed to process was too complicated to be done right now but there is purchase logs for items which could be used to illustrate the difference in the gold of the teams along with the timecodes for the messages.  It may not be possible to do this because of the large dataset you will need to find out if these relations exist.  Another thing that could be analyzed is the teamfights, "Does losing teamfights cause players to be more toxic?"</p>
 </body>
